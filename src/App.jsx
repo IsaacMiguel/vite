@@ -1,7 +1,10 @@
-import { useState } from 'react'
+import React, { useState } from 'react'
+// @ts-ignore
 import reactLogo from './assets/react.svg'
+// @ts-ignore
 import viteLogo from '/vite.svg'
 import './App.css'
+import { users } from './data'
 
 function App() {
   const [count, setCount] = useState(0)
@@ -24,6 +27,9 @@ function App() {
         <p>
           Edit <code>src/App.jsx</code> and save to test HMR
         </p>
+        {
+          users.map(u => <p>{u.name}</p>)
+        }
       </div>
       <p className="read-the-docs">
         Click on the Vite and React logos to learn more
