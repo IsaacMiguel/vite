@@ -6,7 +6,6 @@ Will use:
 - Node 20 🚀
 - React 💻
 - JSDoc 📒
-- Preact/signals-react 📡
 - GitHub Actions 🤖
 
 We choose not use TypeScript and JSDoc instead, to avoid the compilying phease, improve the developer experience, still have all the benefits from typing, no configurations, dependencies, etc. 
