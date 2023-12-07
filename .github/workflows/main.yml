@@ -12,10 +12,10 @@ jobs:
         with:
           node-version: "20"
 
-      - name: Hello!
-        run: Hello!!!! from ${{ github.workflow }} triggered by the ${{ github.event_name }} done by ${{ github.actor }}
+      - name: Author
+        run: echo "Hello from ${{ github.workflow }} triggered by the ${{ github.event_name }} done by ${{ github.actor }}"
 
-      - name: Runing Linter!!!
+      - name: Runing Linter
         run: |
           npm run lint
           echo "Code checked!"
