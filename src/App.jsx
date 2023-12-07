@@ -7,7 +7,7 @@ function App() {
     <>
       <h1>Probando github actions!!!</h1>
       {users.map((u) => (
-        <p>
+        <p key={u.id}>
           {u.name}, edad: {u.age}
         </p>
       ))}

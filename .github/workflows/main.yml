@@ -8,13 +8,22 @@ jobs:
 
     steps:
       - uses: actions/checkout@v2
+      - uses: actions/setup-node@v2
+        with:
+          node-version: "20"
 
-      - name: Hello Codelies!
-        run: echo "Hello!!!! from ${{ github.workflow }} triggered by the ${{ github.event_name }} done by ${{ github.actor }}"
+      - name: Author
+        run: echo "Hello from ${{ github.workflow }} triggered by the ${{ github.event_name }} done by ${{ github.actor }}"
 
-      - name: More and more!!!
-        env:
-          JOB_CONTEXT: ${{ toJson(job) }}
+      - name: install
+        run: yarn install
+
+      - name: Runing Linter
         run: |
-          echo "Job Context: $JOB_CONTEXT"
-          echo "Done!"
+          npm run lint
+          echo "Code checked!"
+
+      - name: Prettier
+        run: |
+          npm run format
+          echo "Formated!"
