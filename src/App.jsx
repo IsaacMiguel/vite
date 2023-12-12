@@ -5,10 +5,10 @@ import { users } from "./data"
 function App() {
   return (
     <>
-      <h1>Probando github actions!!!</h1>
+      <h1>hi!</h1>
       {users.map((u) => (
         <p key={u.id}>
-          {u.name}, edad: {u.age}
+          name: {u.name}, age: {u.age}
         </p>
       ))}
     </>
