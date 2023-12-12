@@ -17,6 +17,7 @@ We use prettier, ESLint and webhooks locally to have a better developer experien
 # Project Setup:
 
 First check if your enviroment has the necesary to run:
+
 - check node and npm version running `npm run check-engines-requirements`
 - install dependencies `npm install`
 - run locally `npm run dev`
@@ -39,7 +40,4 @@ Insert a description...
 
 Insert your environments, treatment for them, settings, etc.
 
-
-
 🚧 🧑‍💻 WIP 🧑‍💻 🚧
-
