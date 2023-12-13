@@ -1,5 +1,9 @@
 module.exports = {
-  extends: ["semistandard", "plugin:react/recommended"],
+  extends: [
+    "semistandard",
+    "plugin:react/recommended",
+    "plugin:jsx-a11y/recommended",
+  ],
   rules: {
     quotes: ["error", "double"],
     semi: ["error", "never"],
@@ -20,4 +24,5 @@ module.exports = {
       version: "detect",
     },
   },
+  plugins: ["jsx-a11y"],
 }
