@@ -22,14 +22,16 @@ First check if your enviroment has the necesary to run:
 - install dependencies `npm install`
 - run locally `npm run dev`
 
-### Conventional commit: 
+### Conventional commit:
 
 We are using [conventional-commits](https://www.conventionalcommits.org/en/v1.0.0/) and this implemented in our git process (with git hooks).
 
-Make use of it running the script 
+Make use of it running the script
+
 ```shell
   npm run commit
 ```
+
 after adding your changes to stage phase.
 
 ### GIT rules:
