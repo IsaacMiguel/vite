@@ -36,6 +36,8 @@ after adding your changes to stage phase.
 
 Write good commit message, use [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) and use the body to explain what and why as opposed to how.
 
+Write good commit message, use [imperative mood](https://en.wikipedia.org/wiki/Imperative_mood) and use the body to explain what and why as opposed to how.
+
 You should commit and push frequently in order to have a good feedback about your changes in the repository. For that, we recommend add your changes to stage (git phase), then commit them with the script `npm run commit` who will guide you throw the process to make the commit with the conventional commits standars.
 
 ### Workflow:
