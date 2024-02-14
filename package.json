@@ -5,7 +5,8 @@
   "type": "module",
   "engines": {
     "node": "20",
-    "npm": "10"
+    "npm": "10",
+    "git": "2"
   },
   "scripts": {
     "dev": "vite",
@@ -19,7 +20,8 @@
     "release:minor": "standard-version --release-as minor",
     "release:patch": "standard-version --release-as patch",
     "release:major": "standard-version --release-as major",
-    "check-engines-requirements": "check-engine ./package.json"
+    "check-engines-requirements": "check-engine ./package.json",
+    "push-tags": "git push origin --tags"
   },
   "dependencies": {
     "react": "^18.2.0",
