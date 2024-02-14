@@ -2,7 +2,7 @@
   "name": "vite-project",
   "private": true,
   "version": "1.1.0",
-  "type": "module",
+  "type": "commonjs",
   "engines": {
     "node": "20",
     "npm": "10",
@@ -21,7 +21,10 @@
     "release:patch": "standard-version --release-as patch",
     "release:major": "standard-version --release-as major",
     "check-engines-requirements": "check-engine ./package.json",
-    "push-tags": "git push origin --tags"
+    "push-tags": "git push origin --tags",
+    "test": "npx playwright test",
+    "test:ui": "npx playwright test --ui",
+    "test:report": "npx playwright show-report"
   },
   "dependencies": {
     "react": "^18.2.0",
@@ -30,6 +33,8 @@
   "devDependencies": {
     "@commitlint/cli": "18.4.3",
     "@commitlint/config-conventional": "18.4.3",
+    "@playwright/test": "^1.41.2",
+    "@types/node": "^20.11.17",
     "@types/react": "^18.2.15",
     "@types/react-dom": "^18.2.7",
     "@vitejs/plugin-react-swc": "^3.3.2",
