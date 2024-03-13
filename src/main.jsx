@@ -2,9 +2,9 @@ import React from "react"
 import ReactDOM from "react-dom/client"
 import App from "./App.jsx"
 
-if (process.env.NODE_ENV !== 'production') {
+if (process.env.NODE_ENV !== "production") {
   // Not For Production
-  import('@axe-core/react').then(axe => {
+  import("@axe-core/react").then((axe) => {
     axe.default(React, ReactDOM, 1000)
     // @ts-ignore for document.getElementById('root')
     ReactDOM.createRoot(document.getElementById("root")).render(
